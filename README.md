@@ -1,6 +1,6 @@
 # Proyecto HTML + CSS
 
-Este proyecto contiene una estructura de una página web con:
+Proyecto de tienda "Enzo" contiene una estructura de una página web con:
 
 - HTML semántico
 - Estilos aplicados mediante CSS
