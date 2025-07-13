@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="estilos.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="container" id="inicio">
@@ -26,64 +27,14 @@
         </div>
       </nav>
 
-      <section class="productos" id="productos">
+      <section class="productos">
         <h2>Productos Destacados</h2>
-        <div class="grid-productos">
-          <div class="producto">
-            <img src="imagenes/producto1.jpg" alt="Producto 1" />
-            <h3>Producto 1</h3>
-            <div class="estrellas">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="producto">
-            <img src="imagenes/producto2.jpg" alt="Producto 2" />
-            <h3>Producto 2</h3>
-            <div class="estrellas">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="producto">
-            <img src="imagenes/producto3.jpg" alt="Producto 3" />
-            <h3>Producto 3</h3>
-            <div class="estrellas">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="producto">
-            <img src="imagenes/producto4.jpg" alt="Producto 4" />
-            <h3>Producto 4</h3>
-            <div class="estrellas">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="producto">
-            <img src="imagenes/producto5.jpg" alt="Producto 5" />
-            <h3>Producto 5</h3>
-            <div class="estrellas">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="producto">
-            <img src="imagenes/producto6.jpg" alt="Producto 6" />
-            <h3>Producto 6</h3>
-            <div class="estrellas">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-        </div>
+        <div class="grid-productos" id="productos"></div>
+      </section>
+
+      <section id="carrito">
+        <h2><i class="fa fa-shopping-cart"></i> Carrito </h2>
+        <div id="contenido_carrito"></div>
       </section>
 
       <section class="contacto" id="contacto">
@@ -100,6 +51,17 @@
           <button type="submit">Enviar</button>
         </form>
       </section>
+
+      <template id="producto-template">
+        <div class="producto">
+          <img src="imagenes/productos/" alt="" />
+          <h3 class="titulo"></h3>
+          <p class="descripcion"></p>
+          <div class="estrellas"></div>
+          <p class="precio">$</p>
+          <button type="button" class="btn-agregar" data-id data-nombre data-precio>Agregar</button>
+        </div>
+      </template>
 
       <footer>
         <p>2025 Tienda Enzo. Todos los derechos reservados.</p>

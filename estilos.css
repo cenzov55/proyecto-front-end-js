@@ -30,7 +30,6 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -65,7 +64,9 @@ nav {
 }
 
 .producto img {
-  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 5px;
   margin-bottom: 0.5rem;
 }
@@ -80,6 +81,17 @@ nav {
   border-radius: 8px;
   padding: 2rem;
   width: 100%;
+}
+
+#carrito {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
 }
 
 .contacto h2 {
@@ -126,7 +138,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: sticky;
   gap: 1rem;
 }
 
@@ -151,3 +162,42 @@ nav {
 .logo img {
   max-width: 150px;
 }
+
+.btn-agregar {
+  background-color: #851d1d;
+  color: #fff; 
+  padding: 0.75rem 1.5rem; 
+  font-size: 1rem; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #851d1d; 
+}
+
+.btn-quitar {
+  background-color: #851d1d;
+  color: #fff; 
+  padding: 0.2rem 0.5rem; 
+  font-size: 1rem; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar-chico {
+  background-color: #851d1d;
+  color: #fff; 
+  padding: 0.2rem 0.5rem; 
+  font-size: 1rem; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Camisa a cuadros",
+        "precio": 35000,
+        "descripcion": "Camisa de manga larga con diseño de cuadros, ideal para ocasiones casuales.",
+        "estrellas" : 5
+    },
+    {
+        "id": 2,
+        "nombre": "Canguro gris",
+        "precio": 42000,
+        "descripcion": "Canguro gris de algodón, cómodo y perfecto para días frescos.",
+        "estrellas" : 4
+    },
+    {
+        "id": 3,
+        "nombre": "Jeans rectos",
+        "precio": 15100,
+        "descripcion": "Jeans de corte recto, clásicos y versátiles para cualquier ocasión.",
+        "estrellas" : 5
+    },
+    {
+        "id": 4,
+        "nombre": "Camisa azul",
+        "precio": 22000,
+        "descripcion": "Camisa azul de tela ligera, adecuada para eventos formales y casuales.",
+        "estrellas" : 3
+    },
+    {
+        "id": 5,
+        "nombre": "Buso canguro azul",
+        "precio": 37000,
+        "descripcion": "Buso tipo canguro azul, cálido y moderno para el día a día.",
+        "estrellas" : 4
+    },
+    {
+        "id": 6,
+        "nombre": "Pantalon de vestir negro",
+        "precio": 43000,
+        "descripcion": "Pantalón de vestir negro, elegante y perfecto para ocasiones especiales.",
+        "estrellas" : 2
+    }
+]
